@@ -13,7 +13,6 @@
     "target": "ES2022",
     "module": "ESNext",
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
-    "esModuleInterop": true,
     "skipLibCheck": true,
     "types": ["vite/client"]
   }
