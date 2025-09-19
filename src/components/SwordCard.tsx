@@ -16,20 +16,6 @@ export default function SwordCard({ id }: { id: string }) {
           <div className="font-semibold">{sw.name ?? "미상"}</div>
           <div className="text-sm">레벨 +{sw.level}</div>
         </div>
-        <div className="flex gap-2">
-          <button
-            className="px-2 py-1 border rounded"
-            onClick={() => st.selectSword(id)}
-          >
-            선택
-          </button>
-          <button
-            className="px-2 py-1 border rounded"
-            onClick={() => sellSword(id)}
-          >
-            판매
-          </button>
-        </div>
       </div>
     </div>
   );

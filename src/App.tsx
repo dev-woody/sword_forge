@@ -5,6 +5,7 @@ import JunkyardPage from "@routes/JunkyardPage";
 import ExchangePage from "@routes/ExchangePage";
 import ShopPage from "@routes/ShopPage";
 import HUD from "@components/HUD";
+import BgmPlayer from "@components/BgmPlayer";
 
 export default function App() {
   const nav = "px-3 py-2 rounded hover:bg-gray-200";
@@ -46,6 +47,7 @@ export default function App() {
           <Route path="/shop" element={<ShopPage />} />
         </Routes>
       </main>
+      <BgmPlayer />
     </div>
   );
 }

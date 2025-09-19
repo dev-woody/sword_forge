@@ -90,13 +90,13 @@ export default function EnhancePage() {
                 className="px-3 py-2 border rounded"
                 onClick={() => storeAndRestart()}
               >
-                보관하고 재시작(+0)
+                보관하기
               </button>
               <button
                 className="px-3 py-2 border rounded"
                 onClick={() => sw && sellSword(sw.id)}
               >
-                판매하고 재시작(+0)
+                판매하기
               </button>
             </div>
           </>
