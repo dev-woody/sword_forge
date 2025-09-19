@@ -21,7 +21,7 @@ export function buyWarp(kind:"+9"|"+13"|"+14"|"+15"){
 
   if (Math.random() < WARP_PROB[kind]){
     const lv = parseInt(kind.slice(1),10);
-    const sword = { id: crypto.randomUUID().slice(0,8), tier:0, level:lv, name: WARP_NAME[kind] };
+    const sword = { id: crypto.randomUUID().slice(0,8), tier:0, level:lv, name: WARP_NAME[kind], stored: false };
     useGame.getState().addSword(sword);
     return { ok:true, result:"WARP_OK" };
   }

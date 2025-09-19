@@ -14,7 +14,10 @@ function setFailureState(
 /** +0 기본 검 생성 후 자동 선택(보관 후 재시작에 사용) */
 function spawnBaseAndSelect(): string {
   const id = crypto.randomUUID().slice(0, 8);
-  const base: Sword = { id, tier: 0, level: 0, name: "낡은 단검" };
+  const base: Sword = {
+    id, tier: 0, level: 0, name: "낡은 단검",
+    stored: false
+  };
   useGame.getState().addSword(base);
   useGame.getState().selectSword(id);
   return id;

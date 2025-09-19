@@ -40,12 +40,18 @@ export function exchangeByIndex(idx:number){
       const m = k.match(/^\+(\d+)강\s*(.+)$/);
       if (m){
         const lv = parseInt(m[1],10), nm = m[2];
-        for (let i=0;i<v;i++) useGame.getState().addSword({ id:crypto.randomUUID().slice(0,8), tier:0, level:lv, name:nm });
+        for (let i=0;i<v;i++) useGame.getState().addSword({
+          id: crypto.randomUUID().slice(0, 8), tier: 0, level: lv, name: nm,
+          stored: false
+        });
         continue;
       }
     }
     // 일반명 아이템을 "레벨0 검"으로 추가(필요 시 개별 로직 분기)
-    for (let i=0;i<v;i++) useGame.getState().addSword({ id:crypto.randomUUID().slice(0,8), tier:0, level:0, name:k });
+    for (let i=0;i<v;i++) useGame.getState().addSword({
+      id: crypto.randomUUID().slice(0, 8), tier: 0, level: 0, name: k,
+      stored: false
+    });
   }
   return { ok:true };
 }
