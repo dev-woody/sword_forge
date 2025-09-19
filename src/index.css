@@ -1,5 +1,52 @@
 @import "tailwindcss";
 
+/* Tailwind v4 @theme: 컬러/타이포/브레이크포인트 */
 @theme {
-  --font-sans: Pretendard, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-sans: Pretendard, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans KR", Arial;
+  --color-bg: #0b0c10;
+  --color-card: #111319;
+  --color-mute: #8b93a7;
+  --color-accent: #39c5bb;
+
+  --breakpoint-sm: 480px;
+  /* 모바일 기준 상향 */
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+
+  --radius-card: 1rem;
+}
+
+/* 기본 바디: 세이프에어리어 반영 */
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: white;
+  padding-left: max(0px, env(safe-area-inset-left));
+  padding-right: max(0px, env(safe-area-inset-right));
+}
+
+/* 유틸 컴포넌트 */
+.safe-container {
+  padding-bottom: calc(1rem + env(safe-area-inset-bottom));
+}
+
+.card {
+  background: var(--color-card);
+  border-radius: var(--radius-card);
+  box-shadow: 0 6px 20px rgb(0 0 0 / .25);
+}
+
+.tap {
+  min-height: 44px;
+  min-width: 44px;
 }

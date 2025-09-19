@@ -1,4 +1,4 @@
-import { useGame } from "@store/gameStore";
+import { useGame } from "@/store/gameStore";
 
 export default function JunkyardPage() {
   const mats = useGame((s) => s.inv.mats);

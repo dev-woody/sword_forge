@@ -1,5 +1,5 @@
-import { useGame } from "@store/gameStore";
-import { sellSword } from "@services/economy";
+import { useGame } from "@/store/gameStore";
+import { sellSword } from "@/services/economy";
 
 export default function SwordCard({ id }: { id: string }) {
   const st = useGame();

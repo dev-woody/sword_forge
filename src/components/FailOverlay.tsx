@@ -1,9 +1,9 @@
-import { useGame } from "@store/gameStore";
+import { useGame } from "@/store/gameStore";
 import {
   collectFailureDrop,
   restoreFromFailure,
   closeFailure,
-} from "@services/economy";
+} from "@/services/economy";
 
 export default function FailOverlay() {
   const st = useGame();

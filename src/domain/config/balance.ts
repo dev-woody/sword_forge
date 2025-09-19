@@ -1,4 +1,4 @@
-import type { Mode, StageDef } from "@domain/types";
+import type { Mode, StageDef } from "@/domain/types";
 
 export const BALANCE_VERSION = "v0.2.0"; // 변경 시 저장 초기화 권장
 export const MODE: Mode = "EASY";        // "HARD"로 전환 가능

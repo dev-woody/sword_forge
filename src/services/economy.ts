@@ -1,7 +1,7 @@
 // src/services/economy.ts
-import { useGame } from "@store/gameStore";
-import { STAGES } from "@domain/config/balance";
-import type { Sword, FailureState } from "@domain/types";
+import { useGame } from "@/store/gameStore";
+import { STAGES } from "@/domain/config/balance";
+import type { Sword, FailureState } from "@/domain/types";
 
 /** 실패창용: 실패 상태 세팅 */
 function setFailureState(

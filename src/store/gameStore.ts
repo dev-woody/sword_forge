@@ -1,8 +1,8 @@
 // src/store/gameStore.ts
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
-import type { GameState, Sword, Mode, MatName, FailureState } from "@domain/types";
-import { BALANCE_VERSION, MODE } from "@domain/config/balance";
+import type { GameState, Sword, Mode, MatName, FailureState } from "@/domain/types";
+import { BALANCE_VERSION, MODE } from "@/domain/config/balance";
 
 // 모드별 시작 골드
 const START_GOLD: Record<Mode, number> = {
@@ -16,6 +16,7 @@ const mkBase = (): Sword => ({
   tier: 0,
   level: 0,
   name: "낡은 단검",
+  stored: false,
 });
 
 // 모드별 초기 상태 생성 (reset/migrate에서 공통 사용)

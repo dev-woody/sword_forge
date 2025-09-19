@@ -1,6 +1,6 @@
-import { useGame } from "@store/gameStore";
-import { SHOP_PRICE } from "@domain/config/balance";
-import { buyProtect, buyWarp } from "@services/shop";
+import { useGame } from "@/store/gameStore";
+import { SHOP_PRICE } from "@/domain/config/balance";
+import { buyProtect, buyWarp } from "@/services/shop";
 
 export default function ShopPage() {
   const st = useGame();

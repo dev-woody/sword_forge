@@ -1,5 +1,5 @@
-import { useGame } from "@store/gameStore";
-import { SHOP_PRICE, WARP_PROB } from "@domain/config/balance";
+import { useGame } from "@/store/gameStore";
+import { SHOP_PRICE, WARP_PROB } from "@/domain/config/balance";
 
 const WARP_NAME = { "+9":"타우 스워드", "+13":"불꽃 마검", "+14":"마검 아포피스", "+15":"데몬 배틀 엑스" } as const;
 

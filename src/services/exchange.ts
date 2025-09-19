@@ -1,5 +1,5 @@
-import { useGame } from "@store/gameStore";
-import { EXCHANGE } from "@domain/config/balance";
+import { useGame } from "@/store/gameStore";
+import { EXCHANGE } from "@/domain/config/balance";
 
 export function exchangeByIndex(idx:number){
   const st = useGame.getState();

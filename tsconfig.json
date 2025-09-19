@@ -1,19 +1,13 @@
 {
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@routes/*": ["src/routes/*"],
-      "@components/*": ["src/components/*"],
-      "@store/*": ["src/store/*"],
-      "@services/*": ["src/services/*"],
-      "@domain/*": ["src/domain/*"]
-    },
-    "jsx": "react-jsx",
-    "moduleResolution": "bundler",
-    "target": "ES2022",
-    "module": "ESNext",
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
-    "skipLibCheck": true,
-    "types": ["vite/client"]
+      "@/*": ["./src/*"]
+    }
   }
 }

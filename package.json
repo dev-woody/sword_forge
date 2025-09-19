@@ -7,10 +7,14 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format:check": "prettier --check .",
+    "format": "prettier --write .",
+    "knip": "knip"
   },
   "dependencies": {
     "classnames": "^2.5.1",
+    "lucide-react": "^0.544.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.9.1",
@@ -19,6 +23,7 @@
   "devDependencies": {
     "@eslint/js": "^9.35.0",
     "@tailwindcss/postcss": "^4.1.13",
+    "@types/node": "^24.5.2",
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react-swc": "^4.0.1",

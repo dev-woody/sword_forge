@@ -4,8 +4,9 @@ export type MatName = string;
 export interface Sword {
   id: string;
   tier: number;
-  level: number;      // +0 ~
+  level: number;
   name?: string;
+  stored: boolean;
 }
 
 export interface StageDef {

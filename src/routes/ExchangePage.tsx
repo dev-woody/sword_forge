@@ -1,6 +1,6 @@
-import { useGame } from "@store/gameStore";
-import { EXCHANGE } from "@domain/config/balance";
-import { exchangeByIndex } from "@services/exchange";
+import { useGame } from "@/store/gameStore";
+import { EXCHANGE } from "@/domain/config/balance";
+import { exchangeByIndex } from "@/services/exchange";
 
 export default function ExchangePage() {
   const st = useGame();
